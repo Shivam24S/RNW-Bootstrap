@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  border: 5px solid black;
+  height: 100%;
+  margin-top: 20px;
+}
+
+.row {
+  /* border: 3px solid red; */
+}
+
+.col,
+.col-12,
+.col-8,
+.col-4 .col-md-8,
+.col-md-4 {
+  /* border: 2px solid blue; */
+}
+
+ul {
+  display: flex;
+  gap: 10px;
+}
+
+li {
+  list-style: none;
+}
+
+.col-md-4 ul {
+  display: flex;
+  flex-direction: column;
+}
+
+#header {
+  background-color: aquamarine;
+}
+
+#navbar {
+  background-color: bisque;
+}
+
+#main {
+  background-color: chartreuse;
+}
+
+#sidebar {
+  background-color: blueviolet;
+}
+
+#footer {
+  background-color: chocolate;
+}
