@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>table example</title>
+
+    <style>
+      table,
+      th,
+      tr,
+      td {
+        border: 2px solid black;
+      }
+    </style>
+  </head>
+
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th rowspan="2">station</th>
+          <th colspan="2">temperature</th>
+          <th rowspan="2">humidity</th>
+          <th rowspan="2">weather</th>
+        </tr>
+        <tr>
+          <th>max</th>
+          <th>min</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>USA</td>
+          <td>24</td>
+          <td>19</td>
+          <td>60%</td>
+          <td>cloudy</td>
+        </tr>
+        <tr>
+          <td>germany</td>
+          <td>5</td>
+          <td>-1</td>
+          <td>70%</td>
+          <td>rainy</td>
+        </tr>
+        <tr>
+          <td>india</td>
+          <td>20</td>
+          <td>15</td>
+          <td>50%</td>
+          <td>foggy</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

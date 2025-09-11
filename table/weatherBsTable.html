@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap table example</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col">
+          <div class="table-responsive">
+            <table
+              class="table table-bordered table-dark table-hover table-striped"
+            >
+              <thead>
+                <tr>
+                  <th rowspan="2">station</th>
+                  <th colspan="2">temperature</th>
+                  <th rowspan="2">humidity</th>
+                  <th rowspan="2">weather</th>
+                </tr>
+                <tr>
+                  <th>max</th>
+                  <th>min</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="table-warning">
+                  <td>USA</td>
+                  <td>24</td>
+                  <td>19</td>
+                  <td>60%</td>
+                  <td>cloudy</td>
+                </tr>
+                <tr class="table-danger">
+                  <td>germany</td>
+                  <td>5</td>
+                  <td>-1</td>
+                  <td>70%</td>
+                  <td>rainy</td>
+                </tr>
+                <tr class="table-success">
+                  <td>india</td>
+                  <td>20</td>
+                  <td>15</td>
+                  <td>50%</td>
+                  <td>foggy</td>
+                </tr>
+                <tr class="table-primary">
+                  <td>china</td>
+                  <td>10</td>
+                  <td>25</td>
+                  <td>70%</td>
+                  <td>cloudy</td>
+                </tr>
+                <tr class="table-secondary">
+                  <td>UK</td>
+                  <td>60</td>
+                  <td>45</td>
+                  <td>90%</td>
+                  <td>snow</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
