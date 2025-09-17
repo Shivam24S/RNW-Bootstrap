@@ -20,7 +20,7 @@ body {
   color: grey;
 }
 .accordion-item {
-  background-color: #111; /* or black or dark gray */
+  background-color: #111;
   color: white;
   border: 1px solid #444;
 }
