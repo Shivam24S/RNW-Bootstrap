@@ -5,7 +5,45 @@
   font-family: "Epunda Sans", "sans-serif";
 }
 
-main img {
-  height: 80vh;
+.carousel-item img {
+  width: 100%;
+  height: 70vh;
   object-fit: cover;
+}
+
+body {
+  color: white;
+  background-color: black;
+}
+.card {
+  background-color: black;
+  color: grey;
+}
+.accordion-item {
+  background-color: #111; /* or black or dark gray */
+  color: white;
+  border: 1px solid #444;
+}
+
+.accordion-button {
+  background-color: #222;
+  color: white;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #333;
+  color: white;
+  box-shadow: none;
+}
+
+.accordion-body {
+  background-color: #111;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .carousel-item img {
+    height: 50vh;
+    object-fit: cover;
+  }
 }
