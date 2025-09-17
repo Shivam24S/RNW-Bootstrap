@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Epunda Sans", "sans-serif";
+  color: white;
 }
 
 .carousel-item img {
@@ -11,34 +12,13 @@
   object-fit: cover;
 }
 
-body {
-  color: white;
-  background-color: black;
-}
 .card {
-  background-color: black;
-  color: grey;
-}
-.accordion-item {
-  background-color: #111;
-  color: white;
-  border: 1px solid #444;
-}
-
-.accordion-button {
-  background-color: #222;
-  color: white;
-}
-
-.accordion-button:not(.collapsed) {
-  background-color: #333;
-  color: white;
-  box-shadow: none;
-}
-
-.accordion-body {
-  background-color: #111;
-  color: white;
+  background-color: #212529;
+  border: 2px solid #6c757d;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 @media (max-width: 768px) {

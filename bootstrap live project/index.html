@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bootstrap website</title>
+    <title>Formula</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,10 +19,10 @@
     />
     <link rel="stylesheet" href="./style.css" />
   </head>
-  <body>
-    <nav class="navbar navbar-expand-lg bg-secondary">
+  <body class="bg-dark">
+    <nav class="navbar navbar-expand-lg bg-dark">
       <div class="container">
-        <a class="navbar-brand fs-3" href="#"
+        <a class="navbar-brand fs-3 text-secondary" href="#"
           >Formula <span class="fs-2 text-danger">1</span></a
         >
         <button
@@ -39,17 +39,22 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-5">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a
+                class="nav-link active text-secondary"
+                aria-current="page"
+                href="#"
+                >Home</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
+              <a class="nav-link text-secondary" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#service">Service</a>
+              <a class="nav-link text-secondary" href="#service">Service</a>
             </li>
             <li class="nav-item dropdown">
               <a
-                class="nav-link dropdown-toggle"
+                class="nav-link dropdown-toggle text-secondary
                 href="#gallery"
                 role="button"
                 data-bs-toggle="dropdown"
@@ -67,7 +72,7 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link text-secondary" href="#faq">FAQ</a>
             </li>
           </ul>
           <form class="d-flex" role="search">
@@ -77,7 +82,7 @@
               placeholder="Search"
               aria-label="Search"
             />
-            <button class="btn btn-outline-warning" type="submit">
+            <button class="btn btn-outline-danger" type="submit">
               Search
             </button>
           </form>
@@ -116,9 +121,9 @@
               alt="F1"
             />
             <div class="carousel-caption d-none d-md-block">
-              <h5>Formula 1 First car</h5>
+              <h5>The Thrill of Formula 1 Racing</h5>
               <p>
-                Some representative placeholder content for the first slide.
+               Formula 1 is the pinnacle of motorsport, featuring the fastest cars, the most skilled drivers, and cutting-edge technology. Every race delivers unmatched excitement and drama.
               </p>
             </div>
           </div>
@@ -129,9 +134,9 @@
               alt="F2"
             />
             <div class="carousel-caption d-none d-md-block">
-              <h5>Formula 1 second car</h5>
+              <h5>Legendary Formula 1 Cars</h5>
               <p>
-                Some representative placeholder content for the second slide.
+              From the classic Ferrari to the innovative Mercedes AMG, F1 cars are masterpieces of engineering designed to achieve maximum speed, precision, and safety on the track.
               </p>
             </div>
           </div>
@@ -142,9 +147,9 @@
               alt="F3"
             />
             <div class="carousel-caption d-none d-md-block">
-              <h5>Formula 1 third car</h5>
+              <h5>Iconic Drivers and Champions</h5>
               <p>
-                Some representative placeholder content for the third slide.
+               The sport has been shaped by legends like Ayrton Senna, Michael Schumacher, and Lewis Hamilton, whose skill and determination have inspired millions around the world.
               </p>
             </div>
           </div>
@@ -169,7 +174,7 @@
         </button>
       </div>
     </main>
-    <section id="about" class="my-3">
+    <section id="about" class="my-5">
       <div class="h1 text-center text-secondary">
         About <span class="text-danger">F1</span>
       </div>
@@ -182,22 +187,11 @@
             </h3>
             <br />
             <p>
-              Formula 1, often abbreviated as F1, is the highest class of
-              international single-seater auto racing sanctioned by the FIA
-              (Fédération Internationale de l'Automobile). It originated in the
-              early 20th century but was officially established in 1950 with the
-              inaugural World Championship of Drivers. The first race took place
-              at Silverstone, UK, and was won by Italian driver Giuseppe Farina
-              in an Alfa Romeo. The 1950s were dominated by legendary teams like
-              Ferrari, Alfa Romeo, and Maserati, and featured iconic drivers
-              such as Juan Manuel Fangio, who won five world titles during that
-              era. The 1960s saw technical innovations, including rear-engine
-              designs, and drivers like Jim Clark and Graham Hill rose to
-              prominence. Safety was not yet a priority, leading to frequent
-              fatal accidents. In the 1970s, driver safety began to improve with
-              input from stars like Jackie Stewart, who also won three
-              championships. The rivalry between Niki Lauda and James Hunt
-              brought drama and media attention to the sport.
+         Formula 1, often abbreviated as F1, is the highest class of international single-seater auto racing sanctioned by the FIA (Fédération Internationale de l'Automobile). It originated in the early 20th century but was officially established in 1950 with the inaugural World Championship of Drivers. The first race took place at Silverstone, UK, and was won by Italian driver Giuseppe Farina in an Alfa Romeo.
+
+The 1950s were dominated by legendary teams like Ferrari, Alfa Romeo, and Maserati, and featured iconic drivers such as Juan Manuel Fangio, who won five world titles during that era. The 1960s saw technical innovations, including rear-engine designs that revolutionized car performance and handling. Drivers like Jim Clark and Graham Hill rose to prominence, showcasing remarkable skill and consistency. However, safety was not yet a priority, leading to frequent fatal accidents that cast a shadow over the sport.
+
+In the 1970s, the focus on driver safety began to intensify, thanks in part to champions like Jackie Stewart who advocated for improved protective measures. This decade also featured one of the most famous rivalries in F1 history between Niki Lauda and James Hunt, bringing immense drama and media attention to the sport. Technological advancements accelerated, with ground-effect aerodynamics transforming car designs.
             </p>
           </div>
           <div class="col-12 col-md-6 text-center">
@@ -216,7 +210,7 @@
       <hr class="w-25 m-auto" />
       <div class="container my-3">
         <div class="row justify-content-center">
-          <div class="col-12 col-md-6 col-lg-4 mb-4">
+          <div class="col-12 col-md-6 col-lg-4 my-3">
             <div class="card h-100">
               <img
                 src="https://images.pexels.com/photos/190574/pexels-photo-190574.jpeg"
@@ -234,7 +228,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-6 col-lg-4 mb-4">
+          <div class="col-12 col-md-6 col-lg-4 my-3">
             <div class="card h-100">
               <img
                 src="https://images.pexels.com/photos/29320659/pexels-photo-29320659.jpeg"
@@ -252,7 +246,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-6 col-lg-4 mb-4">
+          <div class="col-12 col-md-6 col-lg-4 my-3">
             <div class="card h-100">
               <img
                 src="https://images.pexels.com/photos/29327954/pexels-photo-29327954.jpeg"
@@ -338,7 +332,7 @@
               >
                 <div class="container">
                   <div class="row">
-                    <div class="col-12 col-md-6 col-lg-4 mb-5">
+                    <div class="col-12 col-md-6 col-lg-4 my-3">
                       <div class="card h-100">
                         <img
                           src="https://images.pexels.com/photos/4083523/pexels-photo-4083523.jpeg"
@@ -355,7 +349,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-4 mb-5">
+                    <div class="col-12 col-md-6 col-lg-4 my-3">
                       <div class="card h-100">
                         <img
                           src="https://images.pexels.com/photos/31331382/pexels-photo-31331382.jpeg"
@@ -371,10 +365,10 @@
                         </div>
                       </div>
                     </div>
-                    <div class="col-12 col-md-4 col-lg-4 mb-5">
+                    <div class="col-12 col-md-4 col-lg-4 my-3">
                       <div class="card h-100">
                         <img
-                          src="https://images.pexels.com/photos/20435114/pexels-photo-20435114.jpeg"
+                          src="https://images.pexels.com/photos/6952776/pexels-photo-6952776.jpeg"
                           class="card-img-top"
                           alt="engine photo"
                         />
@@ -399,8 +393,8 @@
               >
                 <div class="container">
                   <div class="row">
-                    <div class="col-4">
-                      <div class="card" style="width: 18rem">
+                    <div class="col-12 col-md-6 col-lg-4 my-3">
+                      <div class="card h-100">
                         <img
                           src="https://images.pexels.com/photos/29327954/pexels-photo-29327954.jpeg"
                           class="card-img-top"
@@ -417,8 +411,8 @@
                         </div>
                       </div>
                     </div>
-                    <div class="col-4">
-                      <div class="card" style="width: 18rem">
+                    <div class="col-12 col-md-6 col-lg-4 my-3">
+                      <div class="card h-100">
                         <img
                           src="https://images.pexels.com/photos/29327954/pexels-photo-29327954.jpeg"
                           class="card-img-top"
@@ -435,8 +429,8 @@
                         </div>
                       </div>
                     </div>
-                    <div class="col-4">
-                      <div class="card" style="width: 18rem">
+                    <div class="col-12 col-md-6 col-lg-4 my-3">
+                      <div class="card h-100">
                         <img
                           src="https://images.pexels.com/photos/29327954/pexels-photo-29327954.jpeg"
                           class="card-img-top"
@@ -465,8 +459,8 @@
               >
                 <div class="container">
                   <div class="row">
-                    <div class="col-12 col-md-6 col-lg-4 mb-5">
-                      <div class="card h-100">
+                    <div class="col-12 col-md-6 col-lg-4 my-3">
+                      <div class="card">
                         <img
                           src="https://images.pexels.com/photos/4083523/pexels-photo-4083523.jpeg"
                           class="card-img-top"
@@ -482,8 +476,8 @@
                         </div>
                       </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-4 mb-5">
-                      <div class="card h-100">
+                    <div class="col-12 col-md-6 col-lg-4 my-3">
+                      <div class="card">
                         <img
                           src="https://images.pexels.com/photos/31331382/pexels-photo-31331382.jpeg"
                           class="card-img-top"
@@ -498,10 +492,10 @@
                         </div>
                       </div>
                     </div>
-                    <div class="col-12 col-md-4 col-lg-4 mb-5">
-                      <div class="card h-100">
+                    <div class="col-12 col-md-6 col-lg-4 my-3">
+                      <div class="card">
                         <img
-                          src="https://images.pexels.com/photos/20435114/pexels-photo-20435114.jpeg"
+                          src="https://images.pexels.com/photos/6952776/pexels-photo-6952776.jpeg"
                           class="card-img-top"
                           alt="engine photo"
                         />
@@ -523,60 +517,102 @@
       </div>
     </section>
 
-    <section id="faq" class="my-5">
+    <section id="faq">
+      <h1 class="text-center text-secondary">Frequently Asked Questions</h1>
+      <hr class="w-25 mx-auto" />
       <div class="container">
-        <h2 class="text-center text-secondary">Frequently Asked Questions</h2>
-        <hr class="w-25 m-auto mb-4" />
-
-        <div class="accordion" id="faqAccordion">
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingOne">
-              <button
-                class="accordion-button"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseOne"
-                aria-expanded="true"
-                aria-controls="collapseOne"
-              >
-                What is Formula 1?
-              </button>
-            </h2>
-            <div
-              id="collapseOne"
-              class="accordion-collapse collapse show"
-              aria-labelledby="headingOne"
-              data-bs-parent="#faqAccordion"
-            >
-              <div class="accordion-body">
-                Formula 1 is the highest level of single-seater auto racing,
-                governed by the FIA.
+        <div class="row">
+          <div class="col">
+            <div class="accordion" id="accordionPanelsStayOpenExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseOne"
+                    aria-expanded="true"
+                    aria-controls="panelsStayOpen-collapseOne"
+                  >
+                    Accordion Item #1
+                  </button>
+                </h2>
+                <div
+                  id="panelsStayOpen-collapseOne"
+                  class="accordion-collapse collapse show"
+                >
+                  <div class="accordion-body">
+                    <strong>This is the first item’s accordion body.</strong> It
+                    is shown by default, until the collapse plugin adds the
+                    appropriate classes that we use to style each element. These
+                    classes control the overall appearance, as well as the
+                    showing and hiding via CSS transitions. You can modify any
+                    of this with custom CSS or overriding our default variables.
+                    It’s also worth noting that just about any HTML can go
+                    within the <code>.accordion-body</code>, though the
+                    transition does limit overflow.
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingTwo">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseTwo"
-                aria-expanded="false"
-                aria-controls="collapseTwo"
-              >
-                How are F1 cars different from normal cars?
-              </button>
-            </h2>
-            <div
-              id="collapseTwo"
-              class="accordion-collapse collapse"
-              aria-labelledby="headingTwo"
-              data-bs-parent="#faqAccordion"
-            >
-              <div class="accordion-body">
-                F1 cars are built for extreme speed, aerodynamics, and cornering
-                ability. They use hybrid power units and advanced technology.
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseTwo"
+                  >
+                    Accordion Item #2
+                  </button>
+                </h2>
+                <div
+                  id="panelsStayOpen-collapseTwo"
+                  class="accordion-collapse collapse"
+                >
+                  <div class="accordion-body">
+                    <strong>This is the second item’s accordion body.</strong>
+                    It is hidden by default, until the collapse plugin adds the
+                    appropriate classes that we use to style each element. These
+                    classes control the overall appearance, as well as the
+                    showing and hiding via CSS transitions. You can modify any
+                    of this with custom CSS or overriding our default variables.
+                    It’s also worth noting that just about any HTML can go
+                    within the <code>.accordion-body</code>, though the
+                    transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseThree"
+                    aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseThree"
+                  >
+                    Accordion Item #3
+                  </button>
+                </h2>
+                <div
+                  id="panelsStayOpen-collapseThree"
+                  class="accordion-collapse collapse"
+                >
+                  <div class="accordion-body">
+                    <strong>This is the third item’s accordion body.</strong> It
+                    is hidden by default, until the collapse plugin adds the
+                    appropriate classes that we use to style each element. These
+                    classes control the overall appearance, as well as the
+                    showing and hiding via CSS transitions. You can modify any
+                    of this with custom CSS or overriding our default variables.
+                    It’s also worth noting that just about any HTML can go
+                    within the <code>.accordion-body</code>, though the
+                    transition does limit overflow.
+                  </div>
+                </div>
               </div>
             </div>
           </div>
