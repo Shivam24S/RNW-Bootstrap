@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: rgb(72, 72, 255);
+  --secondary-color: rgb(255, 20, 243);
+  --gradient: linear-gradient(
+    135deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  --shadow: 0 10 30 rgba(0, 0, 0, 0.1);
+  --transition: all 0.4s ease;
+  --transform: translate(-5px);
+  --text-white: white;
+  --text-black: black;
+  --reverse-gradient: linear-gradient(
+    135deg,
+    var(--secondary-color),
+    var(--primary-color)
+  );
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+  transition: var(--transition);
+  overflow-x: hidden;
+}
+
+.navbar {
+  transition: var(--transition);
+  background: aliceblue;
+  padding: 13px 0;
+}
+
+.navbar-brand {
+  font-size: 25px;
+  color: var(--primary-color);
+}
+
+.navbar-toggler {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.nav-link {
+  position: relative;
+  margin: 0 15px;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: var(--primary-color);
+  transform: var(--transform);
+  border-radius: 50px;
+  background: white;
+}
+
+#hero {
+  background: var(--gradient);
+  position: relative;
+  overflow: hidden;
+  padding: 180px 0 200px;
+  color: var(--text-white);
+}
+
+.profile-pic {
+  max-width: 400px;
+  height: auto;
+  width: 100%;
+}
+
+#hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+}
+
+#hero h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+.hero-content {
+  position: relative;
+}
+
+.btn-primary {
+  background: var(--reverse-gradient);
+  padding: 10px 20px;
+  border-radius: 50px;
+  border: none;
+}
+
+.hero-wave {
+  position: absolute;
+  right: 0;
+  height: 200px;
+  width: 100%;
+}
