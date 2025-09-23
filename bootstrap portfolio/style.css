@@ -14,7 +14,7 @@
   );
   --shadow: 0 10 30 rgba(0, 0, 0, 0.1);
   --transition: all 0.4s ease;
-  --transform: translate(-5px);
+  --transform: translateY(-5px);
   --text-white: white;
   --text-black: black;
   --reverse-gradient: linear-gradient(
@@ -95,9 +95,53 @@ body {
   border: none;
 }
 
+.btn-primary:hover {
+  transform: var(--transform);
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+}
+
 .hero-wave {
   position: absolute;
   right: 0;
   height: 200px;
   width: 100%;
+}
+
+.section-title h1 {
+  font-size: 3rem;
+}
+
+.h-line {
+  background: var(--gradient);
+  height: 10px;
+  border-radius: 50px;
+  width: 5rem;
+  border: none;
+  margin-bottom: 50px;
+}
+
+.description p {
+  font-size: 18px;
+}
+
+.card {
+  height: 500px;
+  border-radius: 50px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.card img {
+  width: 100%;
+  height: 300px;
+  border-radius: 50px;
+}
+
+.card:hover {
+  scale: 1.1;
+  transition: var(--transition);
+  z-index: 10;
 }
