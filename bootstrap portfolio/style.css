@@ -166,3 +166,18 @@ body {
 .list-group {
   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 }
+
+.carousel-item {
+  align-content: center;
+  max-width: 500px;
+  /* max-height: 600px; */
+}
+
+.card {
+  height: 300px;
+}
+
+.p-slider {
+  max-width: 500px;
+  height: 600px !important;
+}
