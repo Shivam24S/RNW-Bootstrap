@@ -167,26 +167,20 @@ body {
   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 }
 
-.p-card {
-  overflow: hidden;
-  height: 500px;
-  border-radius: 30px;
-  margin-top: 30px;
-}
-
-.p-card .card-body {
-  overflow-y: auto;
-}
-
-.p-card img {
+.portfolio-card {
+  height: 570px;
+  margin-top: 50px;
   border-radius: 20px;
+}
+
+.portfolio-card .card-body {
+  overflow-y: auto;
 }
 
 #Contact {
   position: relative;
-  background-image: var(--gradient);
   overflow: hidden;
-  /* padding: 180px 0 200px; */
+  background: var(--gradient);
   color: var(--text-white);
 }
 
@@ -196,4 +190,13 @@ body {
   right: 0;
   height: 100px;
   width: 100%;
+}
+
+#Contact .h-line {
+  background: var(--reverse-gradient);
+}
+
+.social-links a {
+  font-size: 30px;
+  color: white;
 }
