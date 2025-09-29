@@ -167,17 +167,33 @@ body {
   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 }
 
-.carousel-item {
-  align-content: center;
-  max-width: 500px;
-  /* max-height: 600px; */
+.p-card {
+  overflow: hidden;
+  height: 500px;
+  border-radius: 30px;
+  margin-top: 30px;
 }
 
-.card {
-  height: 300px;
+.p-card .card-body {
+  overflow-y: auto;
 }
 
-.p-slider {
-  max-width: 500px;
-  height: 600px !important;
+.p-card img {
+  border-radius: 20px;
+}
+
+#Contact {
+  position: relative;
+  background-image: var(--gradient);
+  overflow: hidden;
+  /* padding: 180px 0 200px; */
+  color: var(--text-white);
+}
+
+.contact-wave {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100px;
+  width: 100%;
 }
