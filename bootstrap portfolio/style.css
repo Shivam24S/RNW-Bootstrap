@@ -200,3 +200,241 @@ body {
   font-size: 30px;
   color: white;
 }
+
+/* 2) Dark mode overrides driven by data-bs-theme on <html> */
+:root[data-bs-theme="dark"] {
+  --dm-bg: #0b1220;
+  --dm-elev-1: #0f172a;
+  --dm-elev-2: #111827;
+  --dm-text: #e5e7eb;
+  --dm-muted: rgba(229, 231, 235, 0.7);
+
+  /* Gradients tuned for dark */
+  --dm-gradient-hero: linear-gradient(135deg, #1d4ed8 0%, #a21caf 100%);
+  --dm-gradient-primary: linear-gradient(135deg, #34d399 0%, #60a5fa 100%);
+  --dm-gradient-hr: linear-gradient(135deg, #34d399 0%, #60a5fa 100%);
+
+  /* Bootstrap color mode hooks */
+  --bs-body-bg: var(--dm-bg);
+  --bs-body-color: var(--dm-text);
+  --bs-border-color: rgba(255, 255, 255, 0.12);
+  --bs-primary: #60a5fa;
+  --bs-secondary: #34d399;
+  --bs-link-color: #8ab4ff;
+  --bs-link-hover-color: #a5c8ff;
+}
+
+/* Body */
+:root[data-bs-theme="dark"] body {
+  background-color: var(--bs-body-bg);
+  color: var(--bs-body-color);
+}
+
+/* Navbar uses theme tokens; remove your light bg there */
+:root[data-bs-theme="dark"] .navbar {
+  background-color: var(--bs-body-bg) !important;
+  border-bottom: 1px solid var(--bs-border-color);
+}
+:root[data-bs-theme="dark"] .navbar-brand {
+  color: var(--bs-primary) !important;
+}
+:root[data-bs-theme="dark"] .nav-link {
+  color: var(--bs-body-color) !important;
+}
+:root[data-bs-theme="dark"] .nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.06);
+  border-radius: 999px;
+  transform: translateY(-2px);
+  box-shadow: none;
+}
+
+/* Hero switches to dark gradient; text stays light */
+:root[data-bs-theme="dark"] .hero {
+  background: var(--dm-gradient-hero);
+  color: var(--dm-text);
+}
+:root[data-bs-theme="dark"] .hero h1,
+:root[data-bs-theme="dark"] .hero h3,
+:root[data-bs-theme="dark"] .hero p {
+  color: var(--dm-text);
+}
+
+/* Blend hero wave into current page bg */
+:root[data-bs-theme="dark"] .hero-wave path {
+  fill: var(--bs-body-bg);
+}
+
+/* Primary gradient button for dark */
+:root[data-bs-theme="dark"] .btn-primary {
+  background: var(--dm-gradient-primary);
+  border: none;
+  color: #081018;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+}
+:root[data-bs-theme="dark"] .btn-primary:hover {
+  filter: brightness(1.06);
+  transform: translateY(-2px);
+}
+
+/* Title hr gradient */
+:root[data-bs-theme="dark"] .h-line {
+  background: var(--dm-gradient-hr);
+  box-shadow: none;
+}
+
+/* Cards (services/portfolio) */
+:root[data-bs-theme="dark"] .service-card,
+:root[data-bs-theme="dark"] .carousel .card {
+  background-color: var(--dm-elev-1);
+  color: var(--bs-body-color);
+  border: 1px solid var(--bs-border-color);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+:root[data-bs-theme="dark"] .service-card .card-title,
+:root[data-bs-theme="dark"] .carousel .card-title {
+  color: var(--dm-text);
+}
+:root[data-bs-theme="dark"] .service-card .card-text,
+:root[data-bs-theme="dark"] .carousel .card-text {
+  color: var(--dm-muted);
+}
+
+/* Skills list-group */
+:root[data-bs-theme="dark"] #Skills .list-group-item {
+  background-color: var(--dm-elev-1);
+  color: var(--bs-body-color);
+  border-color: var(--bs-border-color);
+}
+
+/* Testimonials */
+:root[data-bs-theme="dark"] #Testimonials .text-muted {
+  color: var(--dm-muted) !important;
+}
+:root[data-bs-theme="dark"] #Testimonials img.rounded-circle {
+  border-color: var(--bs-primary) !important;
+}
+
+/* Contact + wave */
+:root[data-bs-theme="dark"] .contact-wave path {
+  fill: var(--bs-body-bg);
+}
+:root[data-bs-theme="dark"] #contact .form-control,
+:root[data-bs-theme="dark"] #contact .form-select,
+:root[data-bs-theme="dark"] #contact textarea {
+  background-color: var(--dm-elev-2);
+  color: var(--bs-body-color);
+  border-color: var(--bs-border-color);
+}
+:root[data-bs-theme="dark"] #contact ::placeholder {
+  color: rgba(229, 231, 235, 0.55);
+}
+
+/* Optional: icon swap utility for your toggle */
+:root[data-bs-theme="light"] .d-dark-inline {
+  display: none !important;
+}
+:root[data-bs-theme="light"] .d-dark-none {
+  display: inline !important;
+}
+:root[data-bs-theme="dark"] .d-dark-inline {
+  display: inline !important;
+}
+:root[data-bs-theme="dark"] .d-dark-none {
+  display: none !important;
+}
+
+/* ==== Custom Dark-Mode Gradient Palette ==== */
+:root[data-bs-theme="dark"].palette-midnight {
+  /* Background & text colors stay compatible with dark mode */
+  --dm-bg: #0b1220;
+  --dm-text: #e5e7eb;
+  --dm-muted: rgba(229, 231, 235, 0.7);
+
+  /* Unique gradients for hero & buttons */
+  --dm-gradient-hero: linear-gradient(
+    135deg,
+    #0f2027 0%,
+    #203a43 50%,
+    #2c5364 100%
+  );
+  --dm-gradient-primary: linear-gradient(135deg, #06b6d4 0%, #3b82f6 100%);
+  --dm-gradient-hr: var(--dm-gradient-primary);
+
+  /* Core bootstrap mappings */
+  --bs-body-bg: var(--dm-bg);
+  --bs-body-color: var(--dm-text);
+}
+
+/* Hero, button, hr will auto-use the variables above */
+html[data-bs-theme="dark"].palette-midnight .hero {
+  background: var(--dm-gradient-hero);
+}
+html[data-bs-theme="dark"].palette-midnight .btn-primary {
+  background: var(--dm-gradient-primary);
+  color: #081018;
+  border: none;
+}
+html[data-bs-theme="dark"].palette-midnight .h-line {
+  background: var(--dm-gradient-hr);
+}
+
+/* :root[data-bs-theme="dark"] {
+  --dm-gradient-hero: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+  --dm-gradient-primary: linear-gradient(135deg, #00c6ff 0%, #0072ff 100%);
+  --dm-gradient-hr: var(--dm-gradient-primary);
+} */
+
+/* :root[data-bs-theme="dark"] {
+  --dm-gradient-hero: linear-gradient(
+    135deg,
+    #0f0c29 0%,
+    #302b63 50%,
+    #24243e 100%
+  );
+  --dm-gradient-primary: linear-gradient(135deg, #ff00cc 0%, #333399 100%);
+  --dm-gradient-hr: var(--dm-gradient-primary);
+} */
+
+/* 
+:root[data-bs-theme="dark"] {
+  --dm-gradient-hero: linear-gradient(135deg, #134e5e 0%, #71b280 100%);
+  --dm-gradient-primary: linear-gradient(135deg, #43cea2 0%, #185a9d 100%);
+  --dm-gradient-hr: var(--dm-gradient-primary);
+} */
+
+/* :root[data-bs-theme="dark"] {
+  --dm-gradient-hero: linear-gradient(
+    135deg,
+    #0f2027 0%,
+    #203a43 50%,
+    #2c5364 100%
+  );
+  --dm-gradient-primary: linear-gradient(135deg, #2980b9 0%, #6dd5fa 100%);
+  --dm-gradient-hr: var(--dm-gradient-primary);
+} */
+
+/* :root[data-bs-theme="dark"] {
+  --dm-gradient-hero: linear-gradient(135deg, #2c3e50 0%, #8e44ad 100%);
+  --dm-gradient-primary: linear-gradient(135deg, #9b59b6 0%, #3498db 100%);
+  --dm-gradient-hr: var(--dm-gradient-primary);
+} */
+
+:root[data-bs-theme="dark"] #hero {
+  background: var(--dm-gradient-hero);
+  color: var(--dm-text);
+}
+:root[data-bs-theme="dark"] #hero h1,
+:root[data-bs-theme="dark"] #hero h3,
+:root[data-bs-theme="dark"] #hero p {
+  color: var(--dm-text);
+}
+
+:root[data-bs-theme="dark"] #Contact {
+  background: var(--dm-gradient-hero);
+  color: var(--dm-text);
+}
+:root[data-bs-theme="dark"] #Contact h1,
+:root[data-bs-theme="dark"] #Contact h3,
+:root[data-bs-theme="dark"] #Contact p {
+  color: var(--dm-text);
+}
